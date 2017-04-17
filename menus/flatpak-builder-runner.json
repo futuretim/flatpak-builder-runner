@@ -1,0 +1,37 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle flatpak-builder-runner",
+        "command": "flatpak-builder-runner:toggle"
+      }
+    ],
+    ".tree-view .file": [
+      {
+        "label": "flatpak-builder",
+        "submenu": [
+          {
+            "label": "Build with Flatpak (treeview)",
+            "command": "flatpak-builder-runner:toggle"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "flatpak-builder-runner",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "flatpak-builder-runner:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
