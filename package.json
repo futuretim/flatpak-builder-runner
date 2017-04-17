@@ -6,7 +6,8 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "flatpak-builder-runner:toggle"
+    "atom-workspace": "flatpak-builder-runner:toggle",
+    "atom-workspace": "flatpak-builder-runner:run"
   },
   "repository": "https://github.com/atom/flatpak-builder-runner",
   "license": "MIT",

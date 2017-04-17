@@ -12,7 +12,7 @@
         "submenu": [
           {
             "label": "Build with Flatpak (treeview)",
-            "command": "flatpak-builder-runner:toggle"
+            "command": "flatpak-builder-runner:run"
           }
         ]
       }
