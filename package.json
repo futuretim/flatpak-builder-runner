@@ -3,10 +3,8 @@
   "main": "./lib/flatpak-builder-runner",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
-    "atom-workspace": "flatpak-builder-runner:toggle",
     "atom-workspace": "flatpak-builder-runner:run"
   },
   "repository": "https://github.com/atom/flatpak-builder-runner",
@@ -15,5 +13,6 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "exec-series": "^1.0.3"
   }
 }
