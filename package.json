@@ -5,7 +5,7 @@
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "flatpak-builder-runner:run"
+    "atom-workspace": ["flatpak-builder-runner:build", "flatpak-builder-runner:install", "flatpak-builder-runner:run", "flatpak-builder-runner:uninstall"]
   },
   "repository": "https://github.com/atom/flatpak-builder-runner",
   "license": "MIT",

@@ -11,8 +11,20 @@
         "label": "flatpak-builder",
         "submenu": [
           {
-            "label": "Build with Flatpak (treeview)",
+            "label": "Build",
+            "command": "flatpak-builder-runner:build"
+          },
+          {
+            "label": "Install",
+            "command": "flatpak-builder-runner:install"
+          },
+          {
+            "label": "Run",
             "command": "flatpak-builder-runner:run"
+          },
+          {
+            "label": "Uninstall",
+            "command": "flatpak-builder-runner:uninstall"
           }
         ]
       }
