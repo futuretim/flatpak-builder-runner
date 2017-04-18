@@ -1,7 +1,7 @@
 {
   "name": "flatpak-builder-runner",
   "main": "./lib/flatpak-builder-runner",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A short description of your package",
   "keywords": [],
   "repository": "https://github.com/atom/flatpak-builder-runner",
@@ -10,6 +10,8 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "exec-series": "^1.0.3"
+    "atom-space-pen-views": "^2.2.0",
+    "exec-series": "^1.0.3",
+    "node-pty": "^0.6.3"
   }
 }
