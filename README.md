@@ -5,15 +5,15 @@ A basic start to creating a working environment for easily creating, building an
 Basic workflow is:
 
 * first run
- * modify preferences for package
- * Add repository (from package menu)
+  * modify preferences for package
+  * Add repository (from package menu)
 
 
 * subsequent runs (as necessary -- works from file and editor context):
- * build
- * install
- * run
- * uninstall
+  * build
+  * install
+  * run
+  * uninstall
 
 
 ***THIS IS PRE-PRE-ALPHA -- BUYER BEWARE***
