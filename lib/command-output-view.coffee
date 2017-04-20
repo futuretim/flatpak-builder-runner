@@ -6,12 +6,14 @@ Utils = require './utils'
 module.exports =
 class CommandOutputView extends View
   @content: ->
-    @div class: 'command-runner', =>
-      @header class: 'panel-heading', =>
-        @span 'Command: '
-        @span class: 'command-name', outlet: 'header'
-      @div class: 'panel-body', outlet: 'outputContainer', =>
-        @pre class: 'command-output', outlet: 'output'
+    @div =>
+      @div class: 'panel-resize-handle'
+      @div class: 'command-runner', =>
+        @header class: 'panel-heading', =>
+          @span 'Command: '
+          @span class: 'command-name', outlet: 'header'
+        @div class: 'panel-body', outlet: 'outputContainer', =>
+          @pre class: 'command-output', outlet: 'output'
 
   attrs: null
 
