@@ -1,6 +1,11 @@
 # flatpak-builder-runner package
 
-A basic start to creating a working environment for easily creating, building and testing flatpak manifests.
+Credit:
+
+This project uses code from other node modules directly:
+* [run-command](https://github.com/kylewlacy/run-command)
+
+flatpak-builder-runner is a package for creating a workflow using Atom for packaging, building, running and testing Flatpak apps.
 
 Basic workflow is:
 
