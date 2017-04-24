@@ -4,6 +4,7 @@ Credit:
 
 This project uses code from other node modules directly:
 * [run-command](https://github.com/kylewlacy/run-command)
+* [atom-script](https://github.com/rgbkrk/atom-script)
 
 flatpak-builder-runner is a package for creating a workflow using Atom for packaging, building, running and testing Flatpak apps.
 

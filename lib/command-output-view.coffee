@@ -32,6 +32,31 @@ class CommandOutputView extends View
     @subscriptions.add = runner.onKill (signal) =>
       @setKillSignal(signal)
 
+    @handleEvents()
+
+  handleEvents: ->
+    @on 'mousedown', '.panel-resize-handle', (e) => @resizeStarted(e)
+
+  resizeStarted: ->
+    $(document).on('mousemove', @resizeView)
+    $(document).on('mouseup', @resizeStopped)
+
+  resizeStopped: ->
+    $(document).off('mousemove', @resizeView)
+    $(document).off('mouseup', @resizeStopped)
+
+  resizeView: ({pageY, which}) ->
+    totalHeight = $(document.body).height()
+    headerHeight = $('.header-view').height()
+
+    # FIXME(rodionovd): I don't know why this offset must be exactly 51px, but
+    # it seems to work. Sorry everyone.
+    magicOffset = 51
+
+    $(".command-output").css({
+        height: (totalHeight - pageY - headerHeight - magicOffset)
+      });
+
   destroy: ->
     @subscriptions.destroy()
 
@@ -44,8 +69,6 @@ class CommandOutputView extends View
 
   isVisible: ->
     @panel.isVisible()
-
-
 
   atBottomOfOutput: ->
     @output[0].scrollHeight <= @output.scrollTop() + @output.outerHeight()
