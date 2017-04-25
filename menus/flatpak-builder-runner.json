@@ -19,6 +19,15 @@
           {
             "label": "Uninstall",
             "command": "flatpak-builder-runner:uninstall"
+          },
+          {
+            "label": "Insert",
+            "submenu": [
+              {
+                "label": "Module Stub",
+                "command": "flatpak-builder-runner:add_module_stub"
+              }
+            ]
           }
         ]
       }
