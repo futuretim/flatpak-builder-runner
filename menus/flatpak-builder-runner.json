@@ -24,6 +24,10 @@
             "label": "Insert",
             "submenu": [
               {
+                "label": "Manifest Stub",
+                "command": "flatpak-builder-runner:add_manifest_stub"
+              },
+              {
                 "label": "Module Stub",
                 "command": "flatpak-builder-runner:add_module_stub"
               }
