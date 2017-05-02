@@ -1,7 +1,7 @@
 {
   "name": "flatpak-builder-runner",
   "main": "./lib/flatpak-builder-runner",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A short description of your package",
   "keywords": [],
   "repository": "https://github.com/futuretim/flatpak-builder-runner",
