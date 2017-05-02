@@ -59,6 +59,10 @@
           {
             "label": "Open shell",
             "command": "flatpak-builder-runner:open_shell"
+          },
+          {
+            "label": "Validate",
+            "command": "flatpak-builder-runner:validate"
           }
         ]
       }
